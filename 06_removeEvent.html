@@ -32,8 +32,12 @@
 <script>
         
 document.querySelector('#images').addEventListener('click', function(e){
-    console.log(e.target);
-    // target er souch bair kore
+    console.log(e.target.parentNode);   // target the parentnode
+   
+    let removeIt = e.target.parentNode   // variable a store korsi
+    removeIt.remove()
+  /// remove function diya remove koira disi
+    
 
 })
 
