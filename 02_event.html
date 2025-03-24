@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: grey; color:rgb(255, 0, 217)">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img  width="200px" id="photoshop" src="https://imgs.search.brave.com/MbCKA9UhhqrI-JwFkCGfv92CuIp5Pu42cxQoICURjw8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oZWxw/eC1wcm9kLnNjZW5l/Ny5jb20vaXMvaW1h/Z2UvSGVscHhQcm9k/TG9jL3BzLWltYWdl/LXJlc2l6ZS1vcmln/aW5hbC1yZXZpc2Vk/PyRwbmckJmpwZWdT/aXplPTEwMCZ3aWQ9/NTUw" alt="photoshop" class="src">
+              </li>
+              <li>
+                <img  width="200px" id="japan" src="https://imgs.search.brave.com/MAuhocqftaPIjAAl6ZSrUM278KvColB3Hf_HT6AqCwE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGUuZ292L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE5LzA0/L0phcGFuLTIxMDd4/MTQwNi5qcGc" alt="japan" class="src">
+              </li>
+              <li>
+                <img  width="200px" id="river" src="https://imgs.search.brave.com/YXgXfLX-TjNrDx0Cib-Y_Veoqn9gicw9oMDBIFhW6RA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzc4LzI3LzI3/LzM2MF9GXzc4Mjcy/NzMwX1VnSVJibXBh/akEyYnpyazJndzFZ/Tjh0cWxKSDZoUFgx/LmpwZw" alt="river" class="src">
+              </li>
+              <li>
+                <img  width="200px" id="owl" src="https://imgs.search.brave.com/FyCltCDqc22divPHXGbtH0xt0iHDDoESRhsAMuBagn4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTcy/MzEzOTI4L3Bob3Rv/L2VhZ2xlLW93bC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RWl5T2JoRmxMWEg3/SC1RUEpiSkRjUE9j/bUJJZENfblFyX1lV/OWF4dTdjZz0" alt="owl" class="src">
+              </li>
+              <li>
+                <img  width="200px" id="player" src="https://imgs.search.brave.com/jM39GivqC2EGvpIMnhlBHMWtSL_K0A4GAf2K6954w0Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA0/NjkxMDE4L3Bob3Rv/L3VuZGVyLXByZXNz/dXJlLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz0xT3hPY2hW/ZUZVX2tjY3VERXV1/cWtlckNqQUdJMk1R/dF9maWNOVXQwUHow/PQ" alt="player" class="src">
+              </li>
+              <li><a style="color:rgb(0, 174, 255);" href="https:google.com"></a>Google</li>
+        </ul>
+    </div>
+</body>
+<script>
+        
+document.getElementById('images').addEventListener('click', function(e){
+
+    console.log("clicked inside the ul");
+    
+}, false)
+
+
+document.getElementById('owl').addEventListener('click', function(e){
+
+console.log("owl clicked");
+e.stopPropagation()   // bubble hoito na
+
+}, false)
+
+</script>
+</html>
