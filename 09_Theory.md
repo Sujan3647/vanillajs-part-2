@@ -12,3 +12,10 @@ ekla javascript engine use hoina .. run time thake jmon nodejs dekha fast hoi.. 
 ```
 Market a to default javaScript to chole na..
 
+## Execution Context
+```
+1. excute one line of code at a time
+2. Console.log :::: 1
+3. console.log :::: 2
+
+CALL Stack ,,,, Memory Heap
