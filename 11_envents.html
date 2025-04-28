@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sujan with Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //  setTimeout() -- method eda ... Eda API re o call kore
+    //browser a use hoi
+    // eda callback,,, handler oi
+
+
+
+    // setTimeout(function () {
+    //     console.log("sujan")
+    // }, 2000)
+
+
+
+
+    const SaySujan = function () {
+        console.log("sujan");
+    }
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "TechXeno Solutions"
+
+    }
+
+
+    const changeAgain = setTimeout(changeText, 3000)
+
+    setTimeout(SaySujan, 2000)
+
+    // clearTimeout(changeAgain)
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearTimeout(changeAgain)
+        console.log("STOpped")
+    })
+
+</script>
+
+</html>

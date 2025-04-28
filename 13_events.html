@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>sujan aur Tech</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        // const sayDate = function () {
+        //     console.log("sujan")
+        // }
+
+        // setInterval(sayDate, 2000)
+
+
+        // const sayDate = function () {
+        //     console.log("sujan", Date.now())
+        // }
+
+        // setInterval(sayDate, 2000)
+
+
+
+        const sayDate = function (str) {
+            console.log(str, Date.now())
+        }
+
+        const IntervalID = setInterval(sayDate, 2000, "hi")
+
+        clearInterval(IntervalID)
+    </script>
+</body>
+
+</html>
