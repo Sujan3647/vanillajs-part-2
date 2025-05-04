@@ -19,3 +19,5 @@ Market a to default javaScript to chole na..
 3. console.log :::: 2
 
 CALL Stack ,,,, Memory Heap
+
+
