@@ -60,3 +60,30 @@ promiseFour.then((user) => {
         console.log('The promise is either resolve or rejected');
 
     })
+
+const promiseFive = new promiseFour(function (resolve, reject) {
+
+    setTimeout(function () {
+        let error = true
+        if (!error) {
+            resolve({ username: "Javascript", password: "123" })
+        }
+        else {
+            reject('ERROR: JS went wrong ')
+        }
+    }, 2000)
+
+})
+
+async function consumerPromiseFive() {
+
+    try {
+        const response = await promiseFive
+        console.log(response);
+
+    } catch (error) {
+        console.log('error');
+
+    }
+}
+consumerPromiseFive()
