@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closuree & Chai</title>
+</head>
+
+<body style="background-color: black">
+
+</body>
+<script>
+    // function init() {
+    //     let name = "sujan"
+
+    //     function displayname() {
+    //         console.log(name);
+
+    //     }
+    //     displayname()
+    // }
+    // init()
+
+    function outer() {
+        let username = "sujan"
+        console.log("OUTER", secret);
+
+        function inner() {
+            let secret = "my123"
+            console.log("inner", username);
+
+        }
+        function innertwo() {
+            console.log("innerTWo", username)
+            console.log(secret);
+
+        }
+        inner()
+        innertwo()
+    }
+    outer()
+    console.log("OUTER", username);
+
+
+</script>
+
+</html>
